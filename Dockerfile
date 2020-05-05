@@ -1,12 +1,8 @@
-FROM node:8.10.0
+FROM node:12.16.3
 
-# RUN mkdir -p /usr/app/build
 WORKDIR /usr/app
 
 COPY . .
-# COPY ./build /usr/app/build
-# COPY ./node_modules /usr/app/node_modules
-# COPY ./package.json /usr/app/package.json
 RUN npm install
 
 EXPOSE 3000
