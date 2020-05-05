@@ -1,10 +1,11 @@
 {
   "name": "legacy-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Simple app to see docker image size",
+  "main": "start.js",
   "scripts": {
-    "test": "jest --detectOpenHandles"
+    "test": "jest --detectOpenHandles",
+    "start": "node start.js"
   },
   "dependencies": {
     "express": "~4.6.1",
@@ -13,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^26.0.0"
+    "jest": "^26.0.0",
+    "supertest": "^4.0.2"
   }
 }
